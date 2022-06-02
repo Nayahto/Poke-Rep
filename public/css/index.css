@@ -1,0 +1,66 @@
+body
+{
+    background-image: linear-gradient(to right, purple , green);
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+h1
+{
+text-align: center;
+}
+
+input, label,button
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+label
+{
+    text-align: center;
+}
+
+section
+{
+text-align: center;
+    color: white;
+}
+h3
+{
+    text-align: center;
+}
+button
+{
+    padding: 0px 15px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+button:hover
+{
+  background-color: rgb(125, 101, 148);
+  color: white;
+  border-radius: 7px;
+}
+
+input
+{
+    background-color: white;
+    color:black;
+    border-radius: 0px;
+    transition: 0.5;
+}
+input:hover
+{
+  background-color: rgb(125, 101, 148);
+  color: white;
+  border-radius: 7px;
+}
+input:focus
+{
+    background-color: white;
+    color:black;
+    border-radius: 0px;
+    transition: 0.5;
+}

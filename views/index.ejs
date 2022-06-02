@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pokedex</title>
+</head>
+<body>
+    <section>
+        <h1>cadastro</h1>
+        <form action="/create" method="post">
+            <label for="imagem"> imagem</label>
+            <input name="imagem" type="text" required>
+
+            <label for="descricao">descricao</label>
+            <input  name="descricao" type="text" required>
+
+            <label for="regiao">regiao</label>
+            <input name="regiao" type="text" required>
+
+            <label for="nome">nome</label>
+            <input name="nome" type="text" required>
+
+            <label for="tipo">tipo</label>
+            <input name="tipo" type="text" required>
+            <button type="submit">enviar</button>
+        </form>
+    </section>
+   
+    <section>
+        <h2>
+         pokemons
+        </h2>
+        <% pokem.forEach((poke) => { %>
+        <div id="perso">
+            <h3>
+                dados
+            </h3>
+        <img src="<%=pokem.imagem %>" alt="">
+        <p><%= pokem.descricao %></p>
+        <p><%= pokem.regiao %></p>
+        <p><%= pokem.nome %></p>
+        <p><%= pokem.tipo %></p>
+        </div>
+       <% }) %>
+    </section>
+</body>
+</html>
